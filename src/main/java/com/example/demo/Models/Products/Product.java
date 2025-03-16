@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.Models.Products;
 
+import com.example.demo.Address;
 import jakarta.persistence.*;
 import lombok.*;
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class Product {
     private String name;
     private Double price;
 
+    @Embedded
     private Address address;
     
 //    private Weekday weekday;

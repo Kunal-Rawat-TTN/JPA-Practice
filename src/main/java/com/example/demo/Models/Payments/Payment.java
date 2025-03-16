@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Models.Payments;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

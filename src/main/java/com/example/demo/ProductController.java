@@ -1,6 +1,8 @@
 package com.example.demo;
 
 
+import com.example.demo.Models.Products.Product;
+import com.example.demo.Repository.ProductRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;

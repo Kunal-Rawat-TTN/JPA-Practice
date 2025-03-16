@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.Models.Products.Product;
+import com.example.demo.Repository.ProductRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
