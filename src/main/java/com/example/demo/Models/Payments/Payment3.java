@@ -17,5 +17,4 @@ public abstract class Payment3 {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     Double amount;
-
 }
