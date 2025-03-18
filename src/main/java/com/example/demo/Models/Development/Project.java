@@ -20,6 +20,6 @@ public class Project {
 
     private String name;
 
-    @ManyToMany(mappedBy = "projects")
+    @ManyToMany(mappedBy = "projects", cascade = CascadeType.PERSIST)
     private Set<Programmer> programmers;
 }

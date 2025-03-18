@@ -27,7 +27,10 @@ public class Programmer {
 
     @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(name = "programmers_projects",
-            joinColumns = @JoinColumn(name = "programmer_id", referencedColumnName = "pId"),
+            joinColumns = {
+                    @JoinColumn(name = "programmer_id", referencedColumnName = "pId"),
+//                    @JoinColumn(name = "nsr_id", referencedColumnName = "nsrId"),
+            },
             inverseJoinColumns = @JoinColumn(name = "project_id", referencedColumnName = "id"))
     private Set<Project> projects;
 }
